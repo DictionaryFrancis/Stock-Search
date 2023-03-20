@@ -1,0 +1,15 @@
+html,
+body {
+    background: #457B9D;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    place-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.rectangle_1{
+    background-image: url("/Stock-Search/Rectangle_1.png");
+    position: absolute;
+    display: none;
+}
