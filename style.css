@@ -6,17 +6,19 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-.container{
+
+.container {
     display: flex;
 }
 
 .rectangle {
     width: 20%;
     background-color: #1D3557;
-    border-left: 17px solid rgba(0,0,0,.2);
+    border-left: 17px solid rgba(0, 0, 0, .2);
     height: 100vh;
     box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .content {
     width: 80%;
     margin: 0 auto;
@@ -24,6 +26,146 @@ body {
 }
 
 
-.logo{
+.logo {
     width: 8em;
+    padding: 5em 0 0 2em;
+}
+
+h1 {
+    padding: 1em 0 0 0;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: 2.1em;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0 0 0;
+    font-size: 1.2em;
+    color: #FFFFFF;
+}
+
+.flex {
+    display: flex;
+    padding: 2em 0 0 0;
+}
+
+.container_input_search {
+    width: 17.5em;
+    height: 2.8em;
+
+}
+
+.input_search {
+    border: 1px solid #C7C7C7;
+    border-radius: 6px 0 0 6px;
+    background: #EDEDED;
+    width: 21.5em;
+    box-shadow: 0px 4px 4px #000000;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    padding: 1em;
+    height: 3.5em;
+}
+
+.container_btn_search {
+    height: 2.9em;
+    width: 4.5em;
+}
+
+.btn_search {
+    border: 1px solid #C7C7C7;
+    background: #A8DADC;
+    box-shadow: 0px 4px 4px #000000;
+    border-radius: 0px 6px 6px 0px;
+    border: none;
+    cursor: pointer;
+    height: 3.5em;
+    width: 5.5em;
+}
+
+span {
+    position: relative;
+    top: 0px;
+    right: 53px;
+}
+
+.icon_img {
+    width: 1.5em;
+    cursor: pointer;
+    position: relative;
+    top: -40px;
+    left: 22px;
+}
+
+/*-----Container Stock Info-----*/
+.container_info {
+    background: #F1FAEE;
+    width: 7.5em;
+    padding: 0.5em;
+    margin: 4em 0 0 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    border-left: 15px solid #1D3557;
+}
+
+.stock_name,
+.stock_letters,
+.price_id {
+    padding: 0.2em 0.2em 0.2em 0.5em;
+}
+
+.stock_name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.0em;
+    color: #495057;
+}
+
+.price_id {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #000000;
+    font-family: 'Poppins';
+}
+
+.stock_letters {
+    color: #495057;
+    font-weight: 500;
+}
+
+/* =========
+    MEDIA QUERY
+    ======== */
+
+@media only screen and (max-width: 400px) {
+    .rectangle {
+        width: 100%;
+        background-color: #1D3557;
+        height: 1.5em;
+        border: 0px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 80%;
+        margin: 0 1.6em;
+        text-align: start;
+    }
+
+    .logo {
+        padding: 1.5em 0 0 6em
+    }
+
+    .input_search {
+        width: 18.9em;
+    }
+
 }
