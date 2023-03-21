@@ -77,7 +77,7 @@ p {
 
 .btn_search {
     border: 1px solid #C7C7C7;
-    background: #A8DADC;
+    background: #40a8ac;
     box-shadow: 0px 4px 4px #000000;
     border-radius: 0px 6px 6px 0px;
     border: none;
@@ -85,6 +85,11 @@ p {
     height: 3.5em;
     width: 5.5em;
 }
+
+.btn_search:hover{
+    background: #18898d;
+} 
+
 
 span {
     position: relative;
