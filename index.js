@@ -8,7 +8,7 @@ const errorElem = document.querySelector(".error")
 
 
 
-search_btn.addEventListener("click", function () {
+search_btn.addEventListener("submit", function () {
     const input_symbol = document.getElementById("input_search").value
     console.log(input_symbol)
 

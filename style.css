@@ -67,6 +67,7 @@ p {
     height: 3.5em;
     padding: 1em;
     width: 21.5em;
+    outline: none;
 }
 
 .container_btn_search {
