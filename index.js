@@ -1,14 +1,14 @@
 const stockNameElem = document.querySelector("#stock_name");
 const stockPriceElem = document.querySelector("#price_id");
 const stockLetterElem = document.querySelector("#stock_letters");
-const search_btn = document.querySelector(".btn_search");
+const search_btn = document.querySelector(".container_btn_search");
 const container_info = document.querySelector(".container_info");
 const interval = "5min";
 const errorElem = document.querySelector(".error")
 
 
 
-search_btn.addEventListener("submit", function () {
+search_btn.addEventListener("click", function () {
     const input_symbol = document.getElementById("input_search").value
     console.log(input_symbol)
 
