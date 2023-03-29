@@ -13,7 +13,9 @@ fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${
         //console.log(typeof look);
         console.log(look);
 
-        console.log(look["Time Series (5min)"]["2023-03-28 20:00:00"]["1. open"]);
+        const lastRefreshed = look["Meta Data"]["Last Refreshed"]
+
+        console.log(look["Time Series (5min)"][lastRefreshed]["1. open"]);
 
         stockPriceElem.textContent = `$ ${look["Time Series (5min)"]["2023-03-28 20:00:00"]["1. open"]}`
         
