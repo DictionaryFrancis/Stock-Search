@@ -34,31 +34,35 @@ search_btn.addEventListener("click", function () {
     //stockPriceElem.textContent = "$3.6660"
     //stockLetterElem.textContent = "BB"
 
+
     fetch(url)
         .then((response) => response.json())
         .then((data) =>
-        
+
 
 
 
             setTimeout(() => {
                 container_info.style.display = "block"
 
-                
-        if (data.Name === undefined) {
-            container_info.style.display = "none";
-            errorElem.innerHTML = `No matching results for "${symbolGenerated} "`
-            return errorElem.style.display = "block";
-        } else {
 
-                 errorElem.style.display = "none";
-                stockNameElem.textContent = `${data.Name}`
-                stockPriceElem.textContent = `$ ${data.BookValue}`
-                stockLetterElem.textContent = `${data.Symbol}`
-            }}, "1000"));
-        
-        }
+                if (data.Name === undefined) {
+                    container_info.style.display = "none";
+                    errorElem.innerHTML = `No matching results for "${symbolGenerated} "`
+                    return errorElem.style.display = "block";
+                } else {
+
+
+                    errorElem.style.display = "none";
+                    stockNameElem.textContent = `${data.Name}`
+                    stockLetterElem.textContent = `${data.Symbol}`
+                    StockPrice(symbolGenerated,apikey)
+                    console.log(StockPrice)
+                }
+            }, "1000"));
+
+}
 )
-    
+
 
 

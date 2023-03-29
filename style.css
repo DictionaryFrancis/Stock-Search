@@ -171,7 +171,6 @@ span {
     }
 
     .content {
-        margin: 0 1.6em;
         text-align: start;
         width: 80%;
     }
@@ -181,7 +180,7 @@ span {
     }
 
     .input_search {
-        width: 18.9em;
+        width: 100%;
     }
 
 }
