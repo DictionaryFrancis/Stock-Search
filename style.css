@@ -1,3 +1,12 @@
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-callout: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-modify: none;
+    -webkit-highlight: none;
+}
+
 html,
 body {
     background: #457B9D;
@@ -69,14 +78,12 @@ p {
     padding: 0 0 0 1em;
     width: 21.5em;
     outline: none;
-    -webkit-user-select:none;
 }
 
 
 
 select {
     font-size: 100%;
-    -webkit-user-select:none;
 }
 
 .container_btn_search {
