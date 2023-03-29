@@ -69,6 +69,7 @@ p {
     padding: 0 0 0 1em;
     width: 21.5em;
     outline: none;
+    -webkit-magnifier: none
 }
 
 
