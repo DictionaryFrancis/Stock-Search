@@ -7,6 +7,7 @@ function StockPrice(symbolGenerated, apikey) {
 
             const look = data
             const price = Number(look["Global Quote"]["05. price"])
+            console.log(look)
             //typeoff variable to indetify what is the variable function
             //console.log(typeof look);
 
