@@ -1,23 +1,25 @@
-function StockPrice(symbolGenerated,apikey){
-    
+function StockPrice(symbolGenerated, apikey) {
 
 
-fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbolGenerated}&interval=5min&apikey=${apikey}`)
+    fetch(`https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbolGenerated}&apikey=${apikey}`)
+        .then((response) => response.json())
+        .then((data) => {
+
+            const look = data
+            const price = Number(look["Global Quote"]["05. price"])
+            //typeoff variable to indetify what is the variable function
+            //console.log(typeof look);
 
 
-    .then((response) => response.json())
-    .then((data) => {
+            //const lastRefreshed = look["Meta Data"]
+            //console.log(lastRefreshed)
 
-        const look = data
-        //typeoff variable to indetify what is the variable function
-        //console.log(typeof look);
-        console.log(look);
+            //console.log(look["Time Series (5min)"]["2023-03-29 18:20:00"]["1. open"]);
+            //console.log(look["Time Series (5min)"][lastRefreshed]["1. open"]);
 
-        const lastRefreshed = look["Meta Data"]["Last Refreshed"]
+            //stockPriceElem.textContent = `$ ${look["Time Series (5min)"]["2023-03-29 18:20:00"]["1. open"]}`
+            console.log(stockPriceElem.textContent = `$ ${look["Global Quote"]["05. price"]}`)
+            stockPriceElem.textContent = (`$ ${price.toFixed(2)}`)
 
-        console.log(look["Time Series (5min)"][lastRefreshed]["1. open"]);
-
-        stockPriceElem.textContent = `$ ${look["Time Series (5min)"]["2023-03-28 20:00:00"]["1. open"]}`
-        
-    })
+        })
 }

@@ -48,7 +48,7 @@ search_btn.addEventListener("click", function () {
 
                 if (data.Name === undefined) {
                     container_info.style.display = "none";
-                    errorElem.innerHTML = `No matching results for "${symbolGenerated} "`
+                    errorElem.innerHTML = `No matching results for "${symbolGenerated}"`
                     return errorElem.style.display = "block";
                 } else {
 
@@ -57,7 +57,7 @@ search_btn.addEventListener("click", function () {
                     stockNameElem.textContent = `${data.Name}`
                     stockLetterElem.textContent = `${data.Symbol}`
                     StockPrice(symbolGenerated,apikey)
-                    console.log(StockPrice)
+                    //console.log(StockPrice)
                 }
             }, "1000"));
 
