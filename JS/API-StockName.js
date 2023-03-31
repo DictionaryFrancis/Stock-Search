@@ -1,6 +1,7 @@
 function StockPrice(symbolGenerated, apikey) {
 
 
+
     fetch(`https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbolGenerated}&apikey=${apikey}`)
         .then((response) => response.json())
         .then((data) => {
@@ -23,4 +24,6 @@ function StockPrice(symbolGenerated, apikey) {
             stockPriceElem.textContent = (`$ ${price.toFixed(2)}`)
 
         })
-}
+
+
+    }
