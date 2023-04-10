@@ -1,4 +1,3 @@
-
 html,
 body {
     background: #457B9D;
@@ -74,7 +73,9 @@ p {
     touch-action: manipulation;
 }
 
-input[type=search] { -webkit-appearance: none; }
+input[type=search] {
+    -webkit-appearance: none;
+}
 
 
 select {
@@ -107,18 +108,40 @@ select {
 }
 
 
-span {
-    position: relative;
-    top: 0px;
-    right: 53px;
-}
 
 .icon_img {
     cursor: pointer;
-    left: 22px;
-    position: relative;
-    top: -40px;
     width: 1.5em;
+}
+span {
+    position: relative;
+    top: 341px;
+    right: 708px;
+}
+
+#tooltip {
+    margin: 0.3em 1em;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    font-size: 16px;
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px;
+    width: 238px;
+    height: 96px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    text-align: start;
+}
+
+#tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 
 
@@ -164,6 +187,19 @@ span {
     color: #1D3557;
     font-weight: bold;
     display: none;
+}
+
+.close_btn {
+    width: 2em;
+}
+
+.img_close_btn {
+    width: 2em;
+}
+
+.small_card {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 /* =========
