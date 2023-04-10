@@ -129,8 +129,8 @@ span {
 .tooltiptext {
     visibility: hidden;
     font-size: 16px;
-    background-color: black;
-    color: #fff;
+    background-color: #A8DADC;
+    color: black;
     padding: 5px 10px;
     width: 238px;
     height: 96px;
@@ -191,13 +191,14 @@ span {
 
 .close_btn {
     width: 2em;
+    cursor: pointer;
 }
 
 .img_close_btn {
     width: 2em;
 }
 
-.small_card {
+.title_card {
     display: flex;
     flex-direction: row-reverse;
 }

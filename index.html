@@ -13,6 +13,7 @@
     </script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="list.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -44,18 +45,38 @@
                     </button>
                 </div>
                 <div id="tooltip">?
-                    <span class="tooltiptext">Search box, use to search for stock. Example of input, AAPL(Apple), MMM(3M),BB(Blackberry)</span>
+                    <span class="tooltiptext">Search box, use to search for stock. Example of input, AAPL(Apple),
+                        MMM(3M), BB(Blackberry)</span>
                 </div>
             </div>
+
             <p class="error"></p>
+
             <section>
-                <div class="container_info">
-                    <div class="small_card">
-                        <img class="img_close_btn" src="/Stock-Search/image/Close-btn.png" alt="Close button">
-                        <div class="stock_name" id="stock_name"></div>
-                    </div>
-                    <div class="price_id" id="price_id"></div>
-                    <div class="stock_letters" id="stock_letters"></div>
+                <ul class="list">
+                    <li class="item">
+                        <div class="container_info">
+                            <div class="small_card">
+                                <div class="title_card">
+                                    <img class="img_close_btn" src="./image/Close-btn.png" alt="Close button">
+                                    <div class="stock_name" id="stock_name"></div>
+                                </div>
+                                <div class="price_id" id="price_id"></div>
+                                <div class="stock_letters" id="stock_letters"></div>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="container_info">
+                            <div class="small_card">
+                                <div class="title_card">
+                                    <img class="img_close_btn" src="./image/Close-btn.png" alt="Close button">
+                                    <div class="stock_name" id="stock_name"></div>
+                                </div>
+                                <div class="price_id" id="price_id"></div>
+                                <div class="stock_letters" id="stock_letters"></div>
+                            </div>
+                    </li>
+                </ul>
             </section>
     </div>
     </main>
