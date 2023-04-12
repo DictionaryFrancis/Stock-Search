@@ -189,13 +189,10 @@ span {
     display: none;
 }
 
-.close_btn {
-    width: 2em;
-    cursor: pointer;
-}
 
 .img_close_btn {
     width: 2em;
+    cursor: pointer;
 }
 
 .title_card {
