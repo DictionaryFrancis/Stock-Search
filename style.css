@@ -199,16 +199,6 @@ span {
     flex-direction: row-reverse;
 }
 
-/* =========
-    INPUT MEDIA
-    ======== */
-    .large {
-        display: none;
-    }
-    
-    .small {
-        display: block;
-    }
 
 /* =========
     MEDIA QUERY
@@ -241,14 +231,6 @@ span {
     }
 
     #tooltip {
-        display: none;
-    }
-
-    .large {
-        display: block;
-    }
-
-    .small {
         display: none;
     }
 
