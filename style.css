@@ -152,9 +152,8 @@ span {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
     border-radius: 4px;
     border-left: 15px solid #1D3557;
-    margin: 4em 0 0 0;
+    margin: 4em 1em 0 0;
     padding: 0.5em;
-    width: 7.5em;
 }
 
 .stock_name,
@@ -201,10 +200,21 @@ span {
 }
 
 /* =========
+    INPUT MEDIA
+    ======== */
+    .large {
+        display: none;
+    }
+    
+    .small {
+        display: block;
+    }
+
+/* =========
     MEDIA QUERY
     ======== */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 440px) {
     .rectangle {
         background-color: #1D3557;
         border: 0px;
@@ -228,6 +238,18 @@ span {
 
     .input_search {
         width: 100%;
+    }
+
+    #tooltip {
+        display: none;
+    }
+
+    .large {
+        display: block;
+    }
+
+    .small {
+        display: none;
     }
 
 }
