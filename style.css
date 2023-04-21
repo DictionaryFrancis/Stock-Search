@@ -107,12 +107,11 @@ select {
     background: #47b2b6;
 }
 
-
-
 .icon_img {
     cursor: pointer;
     width: 1.5em;
 }
+
 span {
     position: relative;
     top: 341px;
@@ -147,7 +146,7 @@ span {
 
 /*-----Container Stock Info-----*/
 .container_info {
-    display: none;
+  /*  display: none;*/
     background: #F1FAEE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
     border-radius: 4px;
@@ -200,6 +199,7 @@ span {
 }
 
 
+
 /* =========
     MEDIA QUERY
     ======== */
@@ -233,5 +233,6 @@ span {
     #tooltip {
         display: none;
     }
+
 
 }
