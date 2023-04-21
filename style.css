@@ -143,10 +143,15 @@ span {
     visibility: visible;
 }
 
+.list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
 
 /*-----Container Stock Info-----*/
 .container_info {
-  /*  display: none;*/
+    /*  display: none;*/
     background: #F1FAEE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
     border-radius: 4px;
@@ -232,6 +237,12 @@ span {
 
     #tooltip {
         display: none;
+    }
+
+    .list {
+
+        flex-direction: column;
+        align-items: flex-start;
     }
 
 
