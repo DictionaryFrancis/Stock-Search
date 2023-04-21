@@ -1,4 +1,5 @@
 const stockNameInput = document.querySelector("#input_search");
+const inputBtn = document.querySelector("#btn_search");
 const creating = document.querySelector("#elementCreation");
 const errorElem = document.querySelector(".error");
 const apikey = "VPG1MAVCBEQPROPT";
@@ -39,6 +40,7 @@ function deleteStock(deleteId) {
     showInfo();
 }
 
+//Or you Click Enter
 stockNameInput.addEventListener("keyup", e => {
     let userSymbol = stockNameInput.value.trim().toUpperCase();
     if (e.key == "Enter") {
@@ -56,6 +58,24 @@ stockNameInput.addEventListener("keyup", e => {
 
     }
 })
+
+//Or you click in the button
+inputBtn.addEventListener("click", e => {
+    let userSymbol = stockNameInput.value.trim().toUpperCase();
+        if (!geralSymbols) {//if it doesnt exist, pass an empty array
+            geralSymbols = [];
+        }
+        if(geralSymbols.length == 5){
+            errorElem.innerHTML = `No more than 5 items are allowed`
+            errorElem.style.display = "block";
+        }else{
+            errorElem.innerHTML = "";
+            errorElem.style.display = "none";
+            getSymbolAndName(userSymbol, apiResultHandle);//User input and waiting for the return for the API send back the results
+        }
+})
+
+inputBtn.addEventListener("click",handleInput)
 
 function apiResultHandle(dataResult) {
  
